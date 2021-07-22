@@ -192,12 +192,16 @@ optgroup {
   font-weight: bold;
 }
 table {
+  background-color: #ffffff;
   border-collapse: collapse;
   border-spacing: 0;
 }
 td,
 th {
   padding: 0;
+}
+tr {
+ background-color: #ffffff;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -13081,13 +13085,13 @@ div#notebook {
 <h2 id="Jishnu-Ray-Chowdhury"><strong><span style="color:#756ECB">Jishnu Ray Chowdhury</span></strong><a class="anchor-link" href="#Jishnu-Ray-Chowdhury">&#182;</a></h2><hr>
 <p><strong><span style="color:#4D5E6F">Last Updated: 07/21/2021</span></strong> <span style="color:#4D5E6F">(MM/DD/YYYY)</span></p>
 <hr>
-    
-<table bgcolor="#ffffff">
+
+<table bgcolor="#ffffff" style="font-size:15px">
   <tr bgcolor="#ffffff">
-    <td><a href="https://scholar.google.com/citations?user=aA6BAS0AAAAJ&amp;hl=en">Google Scholar</a></td>
-    <td><a href="https://www.linkedin.com/in/jrc1995/">LinkedIn</a></td>
-    <td><a href="https://github.com/JRC1995">Github</a></td>
-    <td><a href="https://jrc1995.github.io/cv.pdf">CV</a></td>
+    <td bgcolor="#ffffff"><a href="https://scholar.google.com/citations?user=aA6BAS0AAAAJ&amp;hl=en">Google Scholar</a></td>
+    <td bgcolor="#ffffff"><a href="https://www.linkedin.com/in/jrc1995/">LinkedIn</a></td>
+    <td bgcolor="#ffffff"><a href="https://github.com/JRC1995">Github</a></td>
+    <td bgcolor="#ffffff"><a href="https://jrc1995.github.io/cv.pdf">CV</a></td>
   </tr>
 </table>
 
@@ -13108,6 +13112,9 @@ div#notebook {
     <ul>
         <li>Prompt Tuning, Low Rank Adaptation, Adapter Tuning, Fine Tuning etc.
     </ul>
+</ul>
+<ul>
+<li>Long Form Non-Factoid Question Answering</li>
 </ul>
 <ul>
 <li>Disaster Management - Extracting actionable information from Tweets. </li>
@@ -13131,15 +13138,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="http://proceedings.mlr.press/v139/chowdhury21a.html7">Jishnu Ray Chowdhury, and Cornelia Caragea. "Modeling Hierarchical Structures with Continuous Recursive Neural Networks." In Proceedings of ICML 2021</a></p>
-<p><a href="https://arxiv.org/abs/1910.07897">Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. "Keyphrase Extraction from Disaster-related Tweets." In Proceedings of WWW 2019</a></p>
-<p><a href="https://aclanthology.org/2020.acl-srw.39.pdf">Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. "Cross-Lingual Disaster-related Multi-label Tweet Classification with Manifold Mixup" In Proceedings of ACL SRW 2020</a></p>
-<p><a href="https://arxiv.org/abs/2001.01323">Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. "On Identifying Hashtags in Disaster Twitter Data." In Proceedings of AAAI 2020</a></p>
+<p><a href="http://proceedings.mlr.press/v139/chowdhury21a.html7">"Modeling Hierarchical Structures with Continuous Recursive Neural Networks." - Jishnu Ray Chowdhury, and Cornelia Caragea. In Proceedings of ICML 2021</a></p>
+<p><a href="https://arxiv.org/abs/1910.07897">"Keyphrase Extraction from Disaster-related Tweets." - Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. In Proceedings of WWW 2019</a></p>
+<p><a href="https://aclanthology.org/2020.acl-srw.39.pdf">"Cross-Lingual Disaster-related Multi-label Tweet Classification with Manifold Mixup" - Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. In Proceedings of ACL SRW 2020</a></p>
+<p><a href="https://arxiv.org/abs/2001.01323">"On Identifying Hashtags in Disaster Twitter Data." - Jishnu Ray Chowdhury, Cornelia Caragea, and Doina Caragea. In Proceedings of AAAI 2020</a></p>
 <hr>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13147,14 +13154,16 @@ div#notebook {
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Neural-Chatbot-(link)"><span style="color:#4D5E6F">Neural Chatbot</span> <a href="https://github.com/JRC1995/Chatbot">(link)</a><a class="anchor-link" href="#Neural-Chatbot-(link)">&#182;</a></h3><p>Hybrid Conversational Bot based on both neural retrieval and neural generative mechanisms with Text2Speech Synthesis.</p>
+<h3 id="Neural-Chatbot-(link)"><span style="color:#4D5E6F">Neural Chatbot</span> <a href="https://github.com/JRC1995/Chatbot">(link)</a><a class="anchor-link" href="#Neural-Chatbot-(link)">&#182;</a></h3>
+    <p>Conversational bots are bots which can engage in conversations with a partner in natural language. They can be used as virtual tutors, digital assistants, customer service, virtual therapists, task-oriented services, and entertainment. Conversational bots often come in broadly three forms of models - (i) rule-based model (ii) retrieval (IR) model, and (iii) generative model. Each of these variants have their own advantages and disadvantages. In this project we attempt to combine different aspects of all these approaches with a predominant focus on retrieval and generation. Our overall model is a synergy of multiple sub-modules for retrieval, classification, generation, and ranking. We also incorporate a Text2Speech Synthesis Mechanism.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13162,55 +13171,96 @@ div#notebook {
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Disaster-Classification-(link)"><span style="color:#4D5E6F">Disaster Classification</span> <a href="https://github.com/JRC1995/BERT-Disaster-Classification-Capsule-Routing">(link)</a><a class="anchor-link" href="#Disaster-Classification-(link)">&#182;</a></h3><p>Experimenting disaster-related Tweet classification with BERT using capsule routing and alternatively attention mechanism for layer aggregation and hidden state aggregation.</p>
+<h3 id="Continuous-Recursive-Neural-Network-(link)"><span style="color:#4D5E6F">Continuous Recursive Neural Network</span> <a href="https://github.com/JRC1995/Continuous-RvNNR">(link)</a><a class="anchor-link" href="#Continuous-Recursive-Neural-Network-(link)">&#182;</a></h3>
+<p>Recursive Neural Networks (RvNNs), which compose sequences according to their underlying hierarchical syntactic structure, have performed well in several natural language processing tasks compared to similar models without structural biases. However, traditional RvNNs are incapable of inducing the latent structure in a plain text sequence on their own. Several extensions have been proposed to overcome this limitation. Nevertheless, these extensions tend to rely on surrogate gradients or reinforcement learning at the cost of higher bias or variance. In this work, we propose Continuous Recursive Neural Network (CRvNN) as a backpropagation-friendly alternative to address the aforementioned limitations. This is done by incorporating a continuous relaxation to the induced structure. We demonstrate that CRvNN achieves strong performance in challenging synthetic tasks such as logical inference (Bowman et al., 2015b) and ListOps (Nangia & Bowman, 2018). We also show that CRvNN performs comparably or better than prior latent structure models on real-world tasks such as sentiment analysis and natural language inference.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Disaster-related-Keyphrase-Extraction-(link)"><span style="color:#4D5E6F">Disaster-related Keyphrase Extraction</span> <a href="https://github.com/JRC1995/Tweet-Disaster-Keyphrase">(link)</a><a class="anchor-link" href="#Disaster-related-Keyphrase-Extraction-(link)">&#182;</a></h3><p>Creation of disaster lexicon and a keyphrase extraction dataset. LSTM-based models used for keyphrase extraction (sequence labelling approach).</p>
+<h3 id="Multilingual-Disaster-Classification-Manifold-Mixup-(link)"><span style="color:#4D5E6F">Multilingual Disaster Classification with Manifold Mixup</span> <a href="https://github.com/JRC1995/Multilingual-BERT-Disaster">(link)</a><a class="anchor-link" href="#Multilingual-Disaster-Classification-Manifold-Mixup-(link)">&#182;</a></h3>
+    <p>Distinguishing informative and actionable messages from a social media platform like Twitter is critical for facilitating disaster management. For this purpose, we compile a multilingual dataset of over 130K samples for multi-label classification of disaster-related tweets. We present a masking-based loss function for partially labelled samples and demonstrate the effectiveness of Manifold Mixup in the text domain. Our main model is based on Multilingual BERT, which we further improve with Manifold Mixup. We show that our model generalizes to unseen disasters in the test set. Furthermore, we analyze the capability of our model for zero-shot generalization to new languages. </p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Keyphrase-Generation\Extraction"><span style="color:#4D5E6F">Keyphrase Generation\Extraction</span><a class="anchor-link" href="#Keyphrase-Generation\Extraction">&#182;</a></h3><p>Keyphrase Generation using pointer-generator seq2seq network (both rnns and transformers) and keyphrase extraction from a sequence labelling approach using Transformers on scholarly document. (not open sourced yet)</p>
+<h3 id="DemonRanger-(link)"><span style="color:#4D5E6F">DemonRanger Optimizer Library</span> <a href="https://github.com/JRC1995/DemonRangerOptimizer">(link)</a><a class="anchor-link" href="#DemonRanger-(link)">&#182;</a></h3>
+    <p>The library allows synergy of different optimization strategies like hypergradient optimization, nostalgia, variance rectification, lookahead, decaying momentum (Demon), iterate averaging, gradient checkpointing, gradient noise, quasi-hyperbolic momentum, decorrelated weight decay, and more.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Network-Sparsification-(link)"><span style="color:#4D5E6F">Network Sparsification</span> <a href="https://github.com/JRC1995/Virtues-of-Sparsity">(link)</a><a class="anchor-link" href="#Network-Sparsification-(link)">&#182;</a></h3><p>Experiments with continuous sparsification of neural network connections and sparse representation (using K-winner activation function) on NLP tasks like Named Entity Recognition.<br>
-Continuous sparsification could halve the number of parameters without any significant F1 loss.</p>
+<h3 id="Named-Entity-Recognition-on-Social-Media-(link)"><span style="color:#4D5E6F">Named Entity Recognition on Social Media</span> <a href="https://github.com/JRC1995/SocialMediaNER">(link)</a><a class="anchor-link" href="#Named-Entity-Recognition-on-Social-Media-(link)">&#182;</a></h3>
+<p>We address the challenges posed by noise and emerging/rare entities in Named Entity Recognition task for social media domain. Following the recent advances, we employ Contextualized Word Embeddings from Language Models pretrained on large corpora along with some normalization techniques to reduce noise. Our best model achieves state-of-the-art results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adapt a modular approach to systematically evaluate different contextual embeddings and downstream labeling mechanism using Sequence Labeling and a Question Answering framework.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Toy-Reddit-(link)"><span style="color:#4D5E6F">Toy-Reddit</span> <a href="https://github.com/JRC1995/Faux-Reddit">(link)</a><a class="anchor-link" href="#Toy-Reddit-(link)">&#182;</a></h3><p>Reddit-like website using Vue, Node.js, MariaDB, MongoDB and other technologies.</p>
+<h3 id="capsule-nlp-(link)"><span style="color:#4D5E6F">Text Classification with Capsule Routing</span> <a href="https://github.com/JRC1995/CapsuleRoutingEncoders">(link)</a><a class="anchor-link" href="#capsule-nlp-(link)">&#182;</a></h3>
+<p>In this work, we study and compare multiple capsule routing algorithms for text classification including dynamic routing, Heinsen routing, and capsule-routing inspired attention-based sentence encoding techniques like dynamic self-attention. Further, similar to some works in computer vision, we do an ablation test of the capsule network where we remove the routing algorithm itself. We analyze the theoretical connection between attention and capsule routing, and contrast the two ways of normalizing the routing weights. Finally, we present a new way to do capsule routing, or rather iterative refinement, using a richer attention function to measure agreement among output and input capsules and with highway connections in between iterations.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="IRMv1-and-&#946;-VAE-based-models-(link)"><span style="color:#4D5E6F">IRMv1 and &#946;-VAE based models</span> <a href="https://github.com/JRC1995/Causal-Inference">(link)</a><a class="anchor-link" href="#IRMv1-and-&#946;-VAE-based-models-(link)">&#182;</a></h3><p>Experimenting with beta-VAE based disentangled representations and IRMv1 for robust image classification.</p>
+<h3 id="IRMv1-and-&#946;-VAE-based-models-(link)"><span style="color:#4D5E6F">Exploring Disentanglement and Invariance in the Face of
+Co-variate Shift</span> <a href="https://github.com/JRC1995/Causal-Inference">(link)</a><a class="anchor-link" href="#IRMv1-and-&#946;-VAE-based-models-(link)">&#182;</a></h3>
+    <p>Despite the strong predictive performance of Machine Learning models, they are still subject to spurious correlations. Working under the I.I.D. assumption they are often hard to generalize to an out of distribution test data. In this project, we tackle the problem of co-variate shift, where the test data is from a different distribution than the training data. Particularly, we approach this problem from a causal framework. We compare IRMv1, CoRe, ICP, and Entropy Penalty (EP) on different settings. Furthermore, we experiment with disentangled representations, and we try to enhance classification results by gating the features of intermediate hidden state representations based on their influence on the classification probabilities. The magnitude of influence of a feature is computed based on the difference between the classification probabilities obtained from using the features as they are and that obtained from intervening on certain features by counterfactually altering them. Although most of our results are negative, we provide potential reasons for such results and motivate future directions in this area.</p>
+</div>
+</div>
+</div>
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Disaster-Classification-(link)"><span style="color:#4D5E6F">Disaster Classification with Capsule Routing</span> <a href="https://github.com/JRC1995/BERT-Disaster-Classification-Capsule-Routing">(link)</a><a class="anchor-link" href="#Disaster-Classification-(link)">&#182;</a></h3>
+    <p>Social Media platforms like Twitter are important sources of information during disasters. Exploiting these platforms can facilitate disaster management and potentially help save more lives during times of disaster. To achieve this goal, it is necessary to filter disaster-related information from the endless streams of data that are constantly being generated in popular Social Media platforms every minute. In this project, we tackled the task of classifying Disaster-related Tweets from a Twitter Dataset. We developed and compared different BERT-based model variants for both binary classification and multi-class classification under a multi-task learning framework. Precisely, we explored attention-based and capsule routing-based aggregation methods to aggregate Bi-LSTM hidden states and BERT layers to improve the classification performance. We discover that the simple BERT-only baseline is surprisingly competitive and the more sophisticated variants do not help as much. In general, we achieve high performance - more than 80% in different evaluation metrics (F1, accuracy) for both multiclass classification and binary classification.</p>
 </div>
 </div>
 </div>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Disaster-related-Keyphrase-Extraction-(link)"><span style="color:#4D5E6F">Disaster-related Keyphrase Extraction</span> <a href="https://github.com/JRC1995/Tweet-Disaster-Keyphrase">(link)</a><a class="anchor-link" href="#Disaster-related-Keyphrase-Extraction-(link)">&#182;</a></h3><p>Tweet hashtags have the potential to improve the search for information during disaster events. However, there is a large number of disaster-related tweets that do not have any user-provided hashtags. Moreover, only a small number of tweets that contain actionable hashtags are useful for disaster response. To facilitate progress on automatic identification (or extraction) of disaster hashtags for Twitter data, we construct a unique dataset of disaster-related tweets annotated with hashtags useful for filtering actionable information. Using this dataset, we further investigate Long Short Term Memory-based models within a Multi-Task Learning framework. The best performing model achieves an F1-score as high as 92.22%.</p>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Network-Sparsification-(link)"><span style="color:#4D5E6F">Network Sparsification</span> <a href="https://github.com/JRC1995/Virtues-of-Sparsity">(link)</a><a class="anchor-link" href="#Network-Sparsification-(link)">&#182;</a></h3><p>Experiments with continuous sparsification of neural network connections and sparse representation (using K-winner activation function) on NLP tasks like Named Entity Recognition. Continuous sparsification could halve the number of parameters without any significant F1 loss.</p>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Toy-Reddit-(link)"><span style="color:#4D5E6F">e-Dialectics: Reddit-like Website</span> <a href="https://github.com/JRC1995/Faux-Reddit">(link)</a><a class="anchor-link" href="#Toy-Reddit-(link)">&#182;</a></h3>
+    <p>We have called our project “E-Dialectics” (short for “Electronic Dialectics”) as we intended it to be an electronic medium where people with different point of views can engage in discourses (dialectics) with each other. The project is inspired from Reddit and the initial data is populated from a sample of real Reddit data that was retrieved using Google Big-Query. The database is implemented using both SQL and NoSQL technologies in a complementary fashion. Users of E-Dialectics can read discussion threads and the comments for them, which are created by other users; each thread can also be under different subforums (eg. philosophy, computer science, science etc.). Anyone can read the threads and comments, but to be able to interact further they must login to the site; new users can create their own accounts. Users can then create new threads and comments after they log into their account.</p>
+</div>
+</div>
+</div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13223,6 +13273,7 @@ Continuous sparsification could halve the number of parameters without any signi
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Text-Rank-based-Extractive-Summarization-(link)-and-Keyphrase-Extraction-(link)"><span style="color:#4D5E6F">Text-Rank based Extractive Summarization</span> <a href="https://github.com/JRC1995/auto-tldr-TextRank">(link)</a> <span style="color:#4D5E6F">and Keyphrase Extraction</span> <a href="https://github.com/JRC1995/TextRank-Keyword-Extraction">(link)</a><a class="anchor-link" href="#Text-Rank-based-Extractive-Summarization-(link)-and-Keyphrase-Extraction-(link)">&#182;</a></h3>
+<p>Unsupervised extractive summarization and keyphrase extraction using Text-Rank.</p>
 </div>
 </div>
 </div>
@@ -13230,95 +13281,83 @@ Continuous sparsification could halve the number of parameters without any signi
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="RAKE-based-Extractive-Summarization-(link)-and-Keyphrase-Extraction-(link)"><span style="color:#4D5E6F">RAKE based Extractive Summarization</span> <a href="https://github.com/JRC1995/auto-tldr-RAKE">(link)</a> <span style="color:#4D5E6F">and Keyphrase Extraction</span> <a href="https://github.com/JRC1995/RAKE-Keyword-Extraction">(link)</a><a class="anchor-link" href="#RAKE-based-Extractive-Summarization-(link)-and-Keyphrase-Extraction-(link)">&#182;</a></h3>
+<p>Unsupervised extractive summarization and keyphrase extraction using RAKE.</p>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Early-Projects-(that-have-not-been-maintained-for-a-while):"><strong><span style="color:#756ECB">Early Projects (that have not been maintained for a while):</span></strong><a class="anchor-link" href="#Early-Projects-(that-have-not-been-maintained-for-a-while):">&#182;</a></h2><p>(may contain some bugs and issues; some of them may be obsolete)</p>
+<h3 id="Machine-Translation-(link)"><span style="color:#4D5E6F">Machine Translation</span> <a href="https://github.com/JRC1995/Machine-Translation-Transformers">(link)</a><a class="anchor-link" href="#Machine-Translation-(link)">&#182;</a></h3><p>Project setup for English to Bengali Machine Translation. Using Transformer based seq2seq models.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Machine-Translation-(link)"><span style="color:#4D5E6F">Machine Translation</span> <a href="https://github.com/JRC1995/Machine-Translation-Transformers">(link)</a><a class="anchor-link" href="#Machine-Translation-(link)">&#182;</a></h3><p>(toy) Project setup for English to Bengali Machine Translation. Using Transformer based seq2seq models.</p>
+<h3 id="Question-Answering-with-DMN+-(link)-and-R-NET-(link)"><span style="color:#4D5E6F">Question Answering with DMN+</span> <a href="https://github.com/JRC1995/Dynamic-Memory-Network-Plus">(link)</a> <span style="color:#4D5E6F">and R-NET</span> <a href="https://github.com/JRC1995/QA-bAbi-R_NET">(link)</a><a class="anchor-link" href="#Question-Answering-with-DMN+-(link)-and-R-NET-(link)">&#182;</a></h3>
+    <p>Question Answering with Dynamic Memory Network+ (DMN+) and R-NET. Trained and tested on one babi-task only.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-Answering-with-DMN+-(link)-and-R-NET-(link)"><span style="color:#4D5E6F">Question Answering with DMN+</span> <a href="https://github.com/JRC1995/Dynamic-Memory-Network-Plus">(link)</a> <span style="color:#4D5E6F">and R-NET</span> <a href="https://github.com/JRC1995/QA-bAbi-R_NET">(link)</a><a class="anchor-link" href="#Question-Answering-with-DMN+-(link)-and-R-NET-(link)">&#182;</a></h3><p>A toy-project. Trained and tested on one babi-task only.</p>
+<h3 id="LSTM-based-Abstractive-Summarization-with-Intra-Attention-(link)"><span style="color:#4D5E6F">LSTM-based Abstractive Summarization with Intra-Attention</span> <a href="https://github.com/JRC1995/INTER-INTRA-attentions">(link)</a><a class="anchor-link" href="#LSTM-based-Abstractive-Summarization-with-Intra-Attention-(link)">&#182;</a></h3>
+    <p>Early work (outdated) with intra-attention based encoder (close to LSTMN by Cheng et al. 2016). This was before Transformer became popular with its self-attention (aka intra-attention). Self-attention with LSTM-based models are still pretty underexplored.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="LSTM-based-Abstractive-Summarization-with-Intra-Attention-(link)"><span style="color:#4D5E6F">LSTM-based Abstractive Summarization with Intra-Attention</span> <a href="https://github.com/JRC1995/INTER-INTRA-attentions/blob/master/Attention_Everywhwere.ipynb">(link)</a><a class="anchor-link" href="#LSTM-based-Abstractive-Summarization-with-Intra-Attention-(link)">&#182;</a></h3><p>Early work (outdated) with intra-attention based Encoder (close to LSTMN by Cheng et al.). This was before Transformer became popular with its self-attention (aka intra-attention). Self-attention with LSTM-based models are still pretty underexplored.</p>
+<h3 id="Image-Classification-(CIFAR10)-(link)"><span style="color:#4D5E6F">Image Classification (CIFAR10)</span> <a href="https://github.com/JRC1995/Wide-Residual-Network">(link)</a><a class="anchor-link" href="#Image-Classification-(CIFAR10)-(link)">&#182;</a></h3>
+    <p>Experiment with Wide-ResNet and ResNeXt on CIFAR10 for image classification.</p>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Image-Classification-(CIFAR10)-(link)"><span style="color:#4D5E6F">Image Classification (CIFAR10)</span> <a href="https://github.com/JRC1995/Wide-Residual-Network">(link)</a><a class="anchor-link" href="#Image-Classification-(CIFAR10)-(link)">&#182;</a></h3><p>Experiment with Wide-ResNet and ResNeXt.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Neuron-Sensitivity-Analysis-with-Gradients-(link)"><span style="color:#4D5E6F">Neuron Sensitivity Analysis with Gradients</span> <a href="https://github.com/JRC1995/Input-Sensitivity-Experimental">(link)</a><a class="anchor-link" href="#Neuron-Sensitivity-Analysis-with-Gradients-(link)">&#182;</a></h3>
+    <p>Gradient-based pixel sensitivity analysis on image-classification models.</p>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Lung-Nodules-Classification-(link)"><span style="color:#4D5E6F">Lung Nodules Classification</span> <a href="https://github.com/JRC1995/3D-CNN-Keras">(link)</a><a class="anchor-link" href="#Lung-Nodules-Classification-(link)">&#182;</a></h3>
+<p>Lung Nodules Detection using 3D Convlutional Neural Networks in Keras. ROC Evaluation included.</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Named-Entity-Recognition-with-RNN-CRF-(link)"><span style="color:#4D5E6F">Named Entity Recognition with RNN-CRF</span> <a href="https://github.com/JRC1995/Bi-GRU-CRF-NER">(link)</a><a class="anchor-link" href="#Named-Entity-Recognition-with-RNN-CRF-(link)">&#182;</a></h3><p>I have better versions but they are not yet uploaded to github.</p>
 
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Clustering-with-Self-Organizing-Map-(SOM)-(link)-and-Fuzzy-C-Mean-(link)"><span style="color:#4D5E6F">Clustering with Self-Organizing-Map (SOM)</span> <a href="https://github.com/JRC1995/Self-Organizing-Map">(link)</a> <span style="color:#4D5E6F">and Fuzzy-C-Mean</span> <a href="https://github.com/JRC1995/Fuzzy-C-Mean">(link)</a><a class="anchor-link" href="#Clustering-with-Self-Organizing-Map-(SOM)-(link)-and-Fuzzy-C-Mean-(link)">&#182;</a></h3>
+<p> Clustering with Self-Organizing-Map (SOM) and Fuzzy-C-Mean algorithms.</p>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Neural-Network-Evolution-(link)"><span style="color:#4D5E6F">Neural Network Evolution</span> <a href="https://github.com/JRC1995/Neural_Net_Evolution">(link)</a><a class="anchor-link" href="#Neural-Network-Evolution-(link)">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="GRU-based-Character-level-Language-Model-(link)"><span style="color:#4D5E6F">GRU-based Character-level Language Model</span> <a href="https://github.com/JRC1995/GRU-Text-Generator">(link)</a><a class="anchor-link" href="#GRU-based-Character-level-Language-Model-(link)">&#182;</a></h3><p>Trained partially on Hume's "Treatise on Human Nature"</p>
+<p>Minor experiments with evolution-based optimization of neural parameters.</p>
 <hr>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
     </div>
   </div>
 </body>
