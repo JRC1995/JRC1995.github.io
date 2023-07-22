@@ -1,0 +1,991 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC2GQV1130"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QC2GQV1130');
+
+
+
+    </script>
+
+    <title>Jishnu Ray Chowdhury</title>
+
+    <meta name="author" content="Jishnu Ray Chowdhury">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!--link rel="icon" type="image/png" href="images/IDSIA_logo.png"-->
+</head>
+
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+        <td style="padding:0px">
+            <!-- Intro -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:2.5%;width:63%;vertical-align:middle">
+                        <p style="text-align:center">
+                            <name>Jishnu Ray Chowdhury</name>
+                        </p>
+                        <p>
+                            I am a PhD candidate at University of Illinois at Chicago (UIC), working with Prof. <a
+                                href="https://www.cs.uic.edu/~cornelia/">Cornelia Caragea</a>.
+                            During the summer of 2020 and 2021, I did research internships at <strong>Bloomberg</strong>.
+                            <br><br>
+                            I am broadly interested in Out-of-Distribution (OOD) generalization (eg. length
+                            generalization, systematic generalization), robustness, alignment, and Generative AI.
+                            I explored ways to extend Recursive Neural Networks (RvNN) for length generalization and
+                            compositional generalization
+                            without any access to ground truth structure data. I developed Continuous Recursive Neural
+                            Networks (CRvNN)
+                            which softens the structure and order of composition - making it closer to Transformers. I
+                            also extended
+                            Gumbel Tree RvNNs with Beam Search and introduced several tricks to reduce memory
+                            consumption by more than 10 times. I also explored ways to interface RvNNs
+                            with Transformers. I have also worked on novel forms of location attention for length
+                            generalization using Seq2Seq models.
+                            I have done works on prompt tuning, prompt engineering, contrastive learning, imitation
+                            learning, keyphrase generation, and
+                            question generation.br>
+                        </p>
+                        <p style="text-align:center">
+                            <a href="mailto:jishnu.ray.c@gmail.com">Email</a> &nbsp/&nbsp
+                            <a href="data/cv.pdf">CV</a> &nbsp/&nbsp
+                            <a href="https://github.com/JRC1995">GitHub</a> &nbsp/&nbsp
+                            <a href="https://scholar.google.com/citations?user=aA6BAS0AAAAJ&hl=en">Google Scholar</a>
+                            &nbsp/&nbsp
+                            <a href="https://www.linkedin.com/in/jrc1995/">LinkedIn</a>
+                        </p>
+                        <p>
+                            <strong>Contents:</strong>
+                        <ul>
+                            <li><a href="#research">Research</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                        (Last updated: 07/22/2023)
+                        </p>
+                    </td>
+                    <td style="padding:2.5%;width:40%;max-width:40%">
+                        <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.png"
+                             class="hoverZoomLink">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Publications title -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <heading id="research" style="color:#0066cc;">Research</heading>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>Recursive Neural Networks</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- List of publications -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/CRvNN.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="http://proceedings.mlr.press/v139/chowdhury21a.html">
+                            <papertitle>Modeling Hierarchical Structures with Continuous Recursive Neural Networks
+                            </papertitle>
+                        </a>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ICML <strong>(Long Talk)</strong>, 2021
+                        <br>
+                        <a href="http://proceedings.mlr.press/v139/chowdhury21a/chowdhury21a.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/Continuous-RvNN">code</a> /
+                        <a href="https://slideslive.com/38958572/modeling-hierarchical-structures-with-continuous-recursive-neural-networks?ref=recommended">Talk</a>
+                        <p>
+                            Recursive Neural Networks (RvNNs), which compose sequences according to their underlying
+                            hierarchical syntactic structure, have performed well in several natural language processing
+                            tasks compared to similar models without structural biases.
+                            However, traditional RvNNs are incapable of inducing the latent structure in a plain text
+                            sequence on their own. Several extensions have been proposed to overcome this limitation.
+                            Nevertheless, these extensions tend to rely on surrogate gradients or reinforcement learning
+                            at the cost of higher bias or variance. In this work, we propose Continuous Recursive Neural
+                            Network (CRvNN) as a backpropagation-friendly alternative to address the aforementioned
+                            limitations.
+                            This is done by incorporating a continuous relaxation to the induced structure.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/BT-RvNN.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2305.19999">
+                            <papertitle>Beam Tree Recursive Cells</papertitle>
+                        </a>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ICML, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2305.19999.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/BeamTreeRecursiveCells">code</a>
+                        <p>
+                            We extend Gumbel Tree LSTM by replacing gumbel softmax with a soft top-k mechanism and use
+                            it for beam search instead of greedy easy-first parsing.
+                            This simple method performs competitively with other more sophisticated implementations of
+                            RvNNs. Our proposed soft top-k mechanism can be explored
+                            further for other tasks where sending gradient signals through some top-k is deemed
+                            important.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/EBT-RvNN.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2307.10779">
+                            <papertitle>Efficient Beam Tree Recursion</papertitle>
+                        </a>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ArXiv, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2307.10779.pdf">pdf</a>
+                        <p>
+                            Beam Tree Recursive Neural Network (BT-RvNN) was recently proposed as a simple extension of
+                            Gumbel Tree RvNN and it was shown to achieve state-of-the art
+                            length generalization performance in ListOps while maintaining comparable performance on
+                            other tasks. However, BT-RvNN
+                            can be quite expensive in memory usage. We identify the main bottleneck and remove it
+                            leading to a 10-16 times less memory consumption.
+                            In addition, we also propose a strategy to utilize the induced latent-tree node
+                            representations produced by BT-RvNN to turn BT-RvNN from a sentence encoder
+                            into a sequence contextualizer by sending top-down signals from parent node to leaf nodes
+                            using attention. This opens up a way to interface BT-RvNN with other
+                            downstream modules like Transformers.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/rir.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Recursion in Recursion</papertitle>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        To be released soon.
+                        <p>
+                            We implement a Balanced Tree Recursion at a chunk level. Each chunk at any iteration is
+                            processed by Efficient Beam Tree Recursive Neural Networks (EBT-RvNN).
+                            Thus, Recursion within a Recursion is implemented. The inner recursion is expensive but
+                            bounded by a constant chunk size, whereas the time complexity of the outer recursion
+                            is logarithmic with respect to the sequence length. Thus, this hybrid setup is much more
+                            computationally effecient that EBT-RvNN. On the other hand, it still performs
+                            competitively in ListOps length generalization and logical inference unlike full Balanced
+                            Tree models or other stronger models. The model setup also performs well in the
+                            text-related data of LRA.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>OOD-Generalization, Length Generalization</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/monotonic.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://proceedings.mlr.press/v202/ray-chowdhury23b.html">
+                            <papertitle>Monotonic Location Attention for Length Generalization</papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ICML, 2023
+                        <br>
+                        <a href="https://proceedings.mlr.press/v202/ray-chowdhury23b/ray-chowdhury23b.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/MonotonicLocationAttention">code</a>
+                        <p>
+                            We explore different ways to utilize position-based cross-attention in seq2seq networks to
+                            enable length generalization in algorithmic tasks.
+                            We show that a simple approach of interpolating the original and reversed encoded
+                            representations combined with relative attention allows near-perfect length generalization
+                            for both forward and reverse lookup tasks or copy tasks that had been generally hard to
+                            tackle.
+                            We also devise harder diagnostic tasks where the relative distance of the ideal attention
+                            position varies with timestep.
+                            In such settings, the simple interpolation trick with relative attention is not sufficient.
+                            We introduce novel variants of location attention building on top of Location Attention
+                            (Dubois et al. 2020) to address the new diagnostic tasks.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>Prompt Tuning/Engineering</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/rapt.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21297">
+                            <papertitle>Novelty Controlled Paraphrase Generation with Retrieval Augmented Conditional
+                                Prompt Tuning
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Yong Zhuang,
+                        Shuyi Wang
+                        <br>
+                        AAAI <strong>(Oral)</strong>, 2022
+                        <br>
+                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21297/21046">pdf</a>
+                        <p>
+                            We concentrate on two contributions to the task:
+                            (1) we propose Retrieval Augmented Prompt Tuning (RAPT) as a parameter-efficient method to
+                            adapt large pre-trained language models for paraphrase generation;
+                            (2) we propose Novelty Conditioned RAPT (NC-RAPT) as a simple model-agnostic method of using
+                            specialized prompt tokens for controlled paraphrase generation
+                            with varying levels of lexical novelty. By conducting extensive experiments on four
+                            datasets,
+                            we demonstrate the effectiveness of the proposed approaches for retaining the semantic
+                            content of the original text while inducing lexical novelty in the generation.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>Keyphrase Generation</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/kpdrop.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://aclanthology.org/2022.findings-emnlp.357/">
+                            <papertitle>KPDROP: Improving Absent Keyphrase Generation</papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Seo Yeon Park *,
+                        Tuhin Kundu *,
+                        Cornelia Caragea
+                        <br>
+                        EMNLP Findings, 2023
+                        <br>
+                        <a href="https://aclanthology.org/2022.findings-emnlp.357.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/KPDrop">code</a>
+                        <p>
+                            We propose a model-agnostic approach called keyphrase dropout (or KPDrop) to improve absent
+                            keyphrase generation.
+                            In this approach, we randomly drop present keyphrases from the document and turn them into
+                            artificial absent keyphrases during training.
+                            We test our approach extensively and show that it consistently improves the absent
+                            performance of strong baselines in both supervised and resource-constrained semi-supervised
+                            settings.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/keyphrase.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2304.13883">
+                            <papertitle>Neural Keyphrase Generation: Analysis and Evaluation</papertitle>
+                        </a>
+                        <br>
+                        Tuhin Kundu,
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ArXiv 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2304.13883.pdf">pdf</a>
+                        <p>
+                            we study various tendencies exhibited by three strong models: T5 (based on a
+                            pre-trained transformer), CatSeq-Transformer
+                            (a non-pretrained Transformer), and ExHiRD
+                            (based on a recurrent neural network). We analyze prediction confidence scores, model
+                            calibration, and the effect of token position on
+                            keyphrases generation. Moreover, we motivate and propose a novel metric framework,
+                            SoftKeyScore, to evaluate the similarity between two sets of keyphrases by using softscores
+                            to account for partial matching and semantic similarity
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/aug.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://aclanthology.org/2023.findings-acl.534/">
+                            <papertitle>Data Augmentation for Low-Resource Keyphrase Generation</papertitle>
+                        </a>
+
+                        <br>
+                        Krishna Garg
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        ACL Findings, 2023
+                        <br>
+                        <a href="https://aclanthology.org/2023.findings-acl.534.pdf">pdf</a> /
+                        <a href="https://github.com/kgarg8/kpgen-lowres-data-aug">code</a>
+                        <p>
+                            We present data augmentation strategies specifically to address keyphrase generation in
+                            purely
+                            resource-constrained domains. We design techniques that use the full text of the articles to
+                            improve both present and absent keyphrase
+                            generation
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/boundaries.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://aclanthology.org/2022.findings-emnlp.427/">
+                            <papertitle>Keyphrase Generation Beyond the Boundaries of Title and Abstract
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        Krishna Garg
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        EMNLP Findings, 2022
+                        <br>
+                        <a href="https://aclanthology.org/2022.findings-emnlp.427.pdf">pdf</a> /
+                        <a href="https://github.com/kgarg8/FullTextKP">code</a>
+                        <p>
+                            We comprehensively
+                            explore whether the integration of additional
+                            information from the full text of a given article or from semantically similar articles can
+                            be helpful for a neural keyphrase generation
+                            model or not. We discover that adding sentences from the full text, particularly in the
+                            form of the extractive summary of the article can significantly improve the generation
+                            of both types of keyphrases that are either
+                            present or absent from the text.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>Question Generation</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/control_flow.png" width="160" , height="180" style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2203.04464">
+                            <papertitle>On the Evaluation of Answer-Agnostic Paragraph-level Multi-Question Generation
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea, Debanjan Mahata
+                        <br>
+                        ArXiv 2022
+                        <br>
+                        <a href="https://arxiv.org/pdf/2203.04464.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/QuestionGenerationPub">code</a>
+                        <p>
+                            We study the task of predicting a set of salient questions from a given paragraph without
+                            any prior knowledge of the precise answer. We make two main contributions. First, we propose
+                            a new method to evaluate a set of predicted questions against the set of references by using
+                            the Hungarian algorithm to assign predicted questions to references before scoring the
+                            assigned pairs. We show that our proposed evaluation strategy has better theoretical and
+                            practical properties compared to prior methods because it can properly account for the
+                            coverage of references.
+                            Second, we compare different strategies to utilize a pre-trained seq2seq model to generate
+                            and select a set of questions related to a given paragraph.
+                        </p>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <strong>Disaster-Related Information Extraction</strong>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/disaster.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://aclanthology.org/2020.acl-srw.39/">
+                            <papertitle>Cross-Lingual Disaster-related Multi-label Tweet Classification with Manifold
+                                Mixup
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea,
+                        Doina Caragea
+                        <br>
+                        ACL SRW, 2020
+                        <br>
+                        <a href="https://aclanthology.org/2020.acl-srw.39.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/Multilingual-BERT-Disaster">code</a>
+                        <p>
+                            We present a masking-based loss function for partially labelled samples and demonstrate the
+                            effectiveness of Manifold Mixup in the text domain. Our main model is based on Multilingual
+                            BERT, which we further improve with Manifold Mixup. We show that our model generalizes to
+                            unseen disasters in the test set. Furthermore, we analyze the capability of our model for
+                            zero-shot generalization to new languages.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/disastergen.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://dl.acm.org/doi/10.1145/3308558.3313696">
+                            <papertitle>Keyphrase Extraction from Disaster-related Tweets
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea, Doina Caragea
+                        <br>
+                        WWW, 2019
+                        <br>
+                        <a href="https://dl.acm.org/doi/pdf/10.1145/3308558.3313696?casa_token=UsSr1XchMZgAAAAA:bP2CxkZfMKrowF_qa7e2Af7ZaNAk9uoRU84xlr1zIWrcBqIwTrYhQxvzCLq4YQNRm5XRWpg7CmIfxQ">pdf</a>
+                        <p>
+                            While keyphrase extraction has received considerable attention in recent years, relatively
+                            few studies exist on extracting keyphrases from social media platforms such as Twitter, and
+                            even fewer for extracting disaster-related keyphrases from such sources. During a disaster,
+                            keyphrases can be extremely useful for filtering relevant tweets that can enhance
+                            situational awareness. Previously, joint training of two different layers of a stacked
+                            Recurrent Neural Network for keyword discovery and keyphrase extraction had been shown to be
+                            effective in extracting keyphrases from general Twitter data. We improve the model's
+                            performance on both general Twitter data and disaster-related Twitter data by incorporating
+                            contextual word embeddings, POS-tags, phonetics, and phonological features. Moreover, we
+                            discuss the shortcomings of the often used F1-measure for evaluating the quality of
+                            predicted keyphrases with respect to the ground truth annotations. Instead of the
+                            F1-measure, we propose the use of embedding-based metrics to better capture the correctness
+                            of the predicted keyphrases. In addition, we also present a novel extension of an
+                            embedding-based metric.
+                            The extension allows one to better control the penalty for the difference in the number of
+                            ground-truth and predicted keyphrases.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/disastergen.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5387">
+                            <papertitle>On Identifying Hashtags in Disaster Twitter Data
+                            </papertitle>
+                        </a>
+
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea, Doina Caragea
+                        <br>
+                        AAAI (Special Track, AI for Social Impact), 2020
+                        <br>
+                        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/5387/5243">pdf</a> /
+                        <a href="https://github.com/JRC1995/Tweet-Disaster-Keyphrase">code</a>
+                        <p>
+                            To facilitate progress on automatic identification (or extraction) of disaster hashtags for
+                            Twitter data, we construct a unique dataset of disaster-related tweets annotated with
+                            hashtags useful for filtering actionable information. Using this dataset, we further
+                            investigate Long Short-Term Memory-based models within a Multi-Task Learning framework.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <!-- Workshop papers title -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <heading id="projects" style="color:#0066cc;">Projects</heading>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Workshop papers list -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <!-- Improving Baselines in the Wild -->
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/Chatbot.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/Chatbot">
+                            <papertitle>Open-Domain Conversational AI with Hybrid Generative and Retrieval Mechanisms
+                                (2020)
+                            </papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/Chatbot/blob/master/Project%20Report.pdf">pdf</a> /
+                        <a href="https://www.youtube.com/embed/Zbz-vEp5coo">code</a> /
+                        <a href="">video</a>
+                        <br>
+                        <p>
+                            This is a pre-ChatGPT era model. Uses Dialog-GPT combined with response retrieval mechanism
+                            from a custom script (can be used for customing personality) and reddit database.
+                            Conversational bots are bots which can engage in conversations with a partner in natural
+                            language. They can be used as virtual tutors, digital assistants, customer service, virtual
+                            therapists, task-oriented services, and entertainment. Conversational bots often come in
+                            broadly three forms of models - (i) rule-based model (ii) retrieval (IR) model, and (iii)
+                            generative model. Each of these variants have their own advantages and disadvantages. In
+                            this project we attempt to combine different aspects of all these approaches with a
+                            predominant focus on retrieval and generation. Our overall model is a synergy of multiple
+                            sub-modules for retrieval, classification, generation, and ranking. We also incorporate a
+                            Text2Speech Synthesis Mechanism.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/opt.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/DemonRangerOptimizer">
+                            <papertitle>Experimental Optimizer Library (2021)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/DemonRangerOptimizer">code</a>
+                        <br>
+                        <p>
+                            The library allows synergy of different optimization strategies like hypergradient
+                            optimization, nostalgia, variance rectification, lookahead, decaying momentum, iterate
+                            averaging, gradient checkpointing, gradient noise, quasi-hyperbolic momentum, decorrelated
+                            weight decay, and more.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/ner.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/SocialMediaNER">
+                            <papertitle>Named Entity Recognition on Social Media (2021)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/SocialMediaNER/blob/main/Named_Entity_Recognition_in_Social_Media.pdf">pdf</a>
+                        /
+                        <a href="https://github.com/JRC1995/SocialMediaNER">code</a>
+                        <br>
+                        <p>
+                            We address the challenges posed by noise and emerging/rare entities in Named Entity
+                            Recognition task for social media domain. Following the recent advances, we employ
+                            Contextualized Word Embeddings from Language Models pretrained on large corpora along with
+                            some normalization techniques to reduce noise. Our best model achieves state-of-the-art
+                            results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adapt a modular approach to
+                            systematically evaluate different contextual embeddings and downstream labeling mechanism
+                            using Sequence Labeling and a Question Answering framework.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/capsule.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/CapsuleRoutingEncoders">
+                            <papertitle>Text Classification with Capsule Routing (2021)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/CapsuleRoutingEncoders/blob/main/CS_521_Project_report.pdf">pdf</a>
+                        /
+                        <a href="https://github.com/JRC1995/CapsuleRoutingEncoders">code</a>
+                        <br>
+                        <p>
+                            In this work, we study and compare multiple capsule routing algorithms for text
+                            classification including dynamic routing, Heinsen routing, and capsule-routing inspired
+                            attention-based sentence encoding techniques like dynamic self-attention. Further, similar
+                            to some works in computer vision, we do an ablation test of the capsule network where we
+                            remove the routing algorithm itself. We analyze the theoretical connection between attention
+                            and capsule routing, and contrast the two ways of normalizing the routing weights. Finally,
+                            we present a new way to do capsule routing, or rather iterative refinement, using a richer
+                            attention function to measure agreement among output and input capsules and with highway
+                            connections in between iterations.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/covariate.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/Causal-Inference">
+                            <papertitle>Exploring Disentanglement and Invariance in the Face of Co-variate Shift
+                                (2019)
+                            </papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/CapsuleRoutingEncoders/blob/main/CS_521_Project_report.pdf">pdf</a>
+                        /
+                        <a href="https://github.com/JRC1995/Causal-Inference">code</a>
+                        <br>
+                        <p>
+                            Despite the strong predictive performance of Machine Learning models, they are still subject
+                            to spurious correlations. Working under the I.I.D. assumption they are often hard to
+                            generalize to an out of distribution test data. In this project, we tackle the problem of
+                            co-variate shift, where the test data is from a different distribution than the training
+                            data. Particularly, we approach this problem from a causal framework. We compare IRMv1,
+                            CoRe, ICP, and Entropy Penalty (EP) on different settings. Furthermore, we experiment with
+                            disentangled representations, and we try to enhance classification results by gating the
+                            features of intermediate hidden state representations based on their influence on the
+                            classification probabilities. The magnitude of influence of a feature is computed based on
+                            the difference between the classification probabilities obtained from using the features as
+                            they are and that obtained from intervening on certain features by counterfactually altering
+                            them. Although most of our results are negative, we provide potential reasons for such
+                            results and motivate future directions in this area.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/sparse.jpg" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/Virtues-of-Sparsity">
+                            <papertitle>Neural Network Sparsification (2019)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/Virtues-of-Sparsity">code</a>
+                        <br>
+                        <p>
+                            Experiments with continuous sparsification of neural network connections and sparse
+                            representation (using K-winner activation function) on NLP tasks like Named Entity
+                            Recognition. Continuous sparsification could halve the number of parameters without any
+                            significant F1 loss.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/edialectics.jpg" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/Faux-Reddit">
+                            <papertitle>E-Dialectics - Reddit-like Toy Website (Database Project) (2019)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/Faux-Reddit">code</a>
+                        <br>
+                        <p>
+                            The project is inspired from Reddit and the initial data is populated from a sample of real
+                            Reddit data that was retrieved using Google Big-Query. The database is implemented using
+                            both SQL and NoSQL technologies in a complementary fashion. Users of E-Dialectics can read
+                            discussion threads and the comments for them, which are created by other users; each thread
+                            can also be under different subforums (eg. philosophy, computer science, science etc.).
+                            Anyone can read the threads and comments, but to be able to interact further they must login
+                            to the site; new users can create their own accounts. Users can then create new threads and
+                            comments after they log into their account.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/summary.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>TextRank and RAKE (2017)</papertitle>
+                        <br>
+                        <p>
+                            Unsupervised extractive summarization using RAKE (<a
+                                href="https://github.com/JRC1995/auto-tldr-RAKE">code</a>).
+                            Unsupervised keyphrase extraction using RAKE (<a
+                                href="https://github.com/JRC1995/RAKE-Keyword-Extraction">code</a>).
+                            Unsupervised extractive summarization using TextRank (<a
+                                href="https://github.com/JRC1995/auto-tldr-TextRank">code</a>).
+                            Unsupervised keyphrase extraction using TextRank (<a
+                                href="https://github.com/JRC1995/TextRank-Keyword-Extraction">code</a>).
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/summary.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Abstractive Summarization and Machine Translation (2017)</papertitle>
+                        <br>
+                        <p>
+                            Abstractive Summarization with RNNs (<a
+                                href="https://github.com/JRC1995/Abstractive-Summarization">code</a>).
+                            Machine Translation using Transformers (<a
+                                href="https://github.com/JRC1995/Machine-Translation-Transformers">code</a>).
+                            Abstractive Summarization with intra-attention based LSTM encoder (<a
+                                href="https://github.com/JRC1995/INTER-INTRA-attentions">code</a>).
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/qa.jpg" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Question Answering (2017)</papertitle>
+                        <br>
+                        <p>
+                            DMN+ (<a href="https://github.com/JRC1995/Dynamic-Memory-Network-Plus">code</a>).
+                            R-NET (<a href="https://github.com/JRC1995/Machine-Translation-Transformers">code</a>).
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/image.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://github.com/JRC1995/Wide-Residual-Network">
+                            <papertitle>Image Classification (2017)</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://github.com/JRC1995/Wide-Residual-Network">code</a>
+                        <br>
+                        <p>
+                            Experiment with Wide-ResNet and ResNeXt on CIFAR10 for image classification. Final Year
+                            project for Bachelors.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/som.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <papertitle>Clustering (2017)</papertitle>
+                        <br>
+                        <p>
+                            Self-Organizing-Map (SOM) (<a href="https://github.com/JRC1995/Self-Organizing-Map">code</a>).
+                            Fuzzy C Means (<a href="https://github.com/JRC1995/Fuzzy-C-Mean">code</a>).
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/menu_management.png" width="160">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://rbicsolutions.ca/">
+                            <papertitle>Menu Management Module (2017)</papertitle>
+                        </a>
+                        <br>
+                        <p>
+                            Coped from Website: "Allowing companies to manage recipes, analyze the effect of ingredient
+                            price changes on food cost, develop menus and produce and analyze national or regional food
+                            costs based on sales information.
+
+                            </br>(Menu Management): Allowing chefs and R&D teams to manage current menu items and items
+                            in development and assist in the conversion to training materials.
+
+                            </br>(Food Cost Analysis): Analyze the effect of changing ingredient costs and their affect
+                            on food cost. The menu development team can conduct what-if analysis to different scenarios,
+                            from improving quality to reducing cost.
+
+                            </br>(Rate of Sales Reports): Understanding regional and national food cost based on real
+                            sales, recipes and actual input costs."
+                        </p>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Talks -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <heading id="services" style="color:#0066cc;">Services</heading>
+                        </br>
+                        </br>
+                        <ul>
+                            <li>EMNLP 2023 Reviewer</li>
+                            <li>NeurIPS 2023 Reviewer</li>
+                            <li>ACL 2023 Reviewer</li>
+                            <li>ICLR 2023 Reviewer</li>
+                            <li>AAAI 2023 Reviewer</li>
+                            <li>Multiple ARR Reviews</li>
+                            <li>ACL 2021 Reviewer</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Credits -->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr>
+        <td style="padding:0px">
+            <br>
+            <p style="text-align:right;font-size:small;">
+                Website template credits to <a href="https://jonbarron.info">Jon Barron</a> and <a
+                    href="https://github.com/RobertCsordas/robertcsordas.github.io/tree/573fe6a078854061b876950d58e496e651a1d118">Róbert
+                Csordás</a> .
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+
+</html>
