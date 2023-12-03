@@ -38,7 +38,7 @@
                             <name>Jishnu Ray Chowdhury</name>
                         </p>
                         <p>
-                            I am a PhD candidate at University of Illinois at Chicago (UIC), working with Prof. <a
+                            I am a PhD candidate at the University of Illinois at Chicago (UIC), working with Prof. <a
                                 href="https://www.cs.uic.edu/~cornelia/">Cornelia Caragea</a>.
                             During the summer of 2020 and 2021, I did research internships at <strong>Bloomberg</strong>.
                             <br><br>
@@ -54,7 +54,7 @@
                             consumption by more than 10 times. I also explored ways to interface RvNNs
                             with Transformers. I have also worked on novel forms of location attention for length
                             generalization using Seq2Seq models.
-                            I have done works on prompt tuning, prompt engineering, contrastive learning, imitation
+                            I have done work on prompt tuning, prompt engineering, contrastive learning, imitation
                             learning, keyphrase generation, and
                             question generation.
                         </p>
@@ -73,7 +73,7 @@
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
                         </ul>
-                        (Last updated: 07/23/2023)
+                        (Last updated: 12/02/2023)
                         </p>
                     </td>
                     <td style="padding:2.5%;width:40%;max-width:40%">
@@ -161,7 +161,7 @@
                         <a href="https://arxiv.org/pdf/2305.19999.pdf">pdf</a> /
                         <a href="https://github.com/JRC1995/BeamTreeRecursiveCells">code</a>
                         <p>
-                            We extend Gumbel Tree LSTM by replacing gumbel softmax with a soft top-k mechanism and use
+                            We extend Gumbel Tree LSTM by replacing Gumbel softmax with a soft top-k mechanism and use
                             it for beam search instead of greedy easy-first parsing.
                             This simple method performs competitively with other more sophisticated implementations of
                             RvNNs. Our proposed soft top-k mechanism can be explored
@@ -229,8 +229,8 @@
                             Thus, Recursion within a Recursion is implemented. The inner recursion is expensive but
                             bounded by a constant chunk size, whereas the time complexity of the outer recursion
                             is logarithmic with respect to the sequence length. Thus, this hybrid setup is much more
-                            computationally effecient that EBT-RvNN. On the other hand, it still performs
-                            competitively in ListOps length generalization and logical inference unlike full Balanced
+                            computationally efficient than EBT-RvNN. On the other hand, it still performs
+                            competitively in ListOps length generalization and logical inference unlike fully Balanced
                             Tree models or other stronger models. The model setup also performs well in the
                             text-related data of LRA.
                         </p>
@@ -274,7 +274,7 @@
                             We explore different ways to utilize position-based cross-attention in seq2seq networks to
                             enable length generalization in algorithmic tasks.
                             We show that a simple approach of interpolating the original and reversed encoded
-                            representations combined with relative attention allows near-perfect length generalization
+                            representations combined with relative attention allow near-perfect length generalization
                             for both forward and reverse lookup tasks or copy tasks that had been generally hard to
                             tackle.
                             We also devise harder diagnostic tasks where the relative distance of the ideal attention
@@ -564,7 +564,7 @@
                         <a href="https://aclanthology.org/2020.acl-srw.39.pdf">pdf</a> /
                         <a href="https://github.com/JRC1995/Multilingual-BERT-Disaster">code</a>
                         <p>
-                            We present a masking-based loss function for partially labelled samples and demonstrate the
+                            We present a masking-based loss function for partially labeled samples and demonstrate the
                             effectiveness of Manifold Mixup in the text domain. Our main model is based on Multilingual
                             BERT, which we further improve with Manifold Mixup. We show that our model generalizes to
                             unseen disasters in the test set. Furthermore, we analyze the capability of our model for
@@ -742,10 +742,10 @@
                         <p>
                             We address the challenges posed by noise and emerging/rare entities in Named Entity
                             Recognition task for social media domain. Following the recent advances, we employ
-                            Contextualized Word Embeddings from Language Models pretrained on large corpora along with
+                            Contextualized Word Embeddings from Language Models pre-trained on large corpora along with
                             some normalization techniques to reduce noise. Our best model achieves state-of-the-art
-                            results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adapt a modular approach to
-                            systematically evaluate different contextual embeddings and downstream labeling mechanism
+                            results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adopt a modular approach to
+                            systematically evaluate different contextual embeddings and downstream labeling mechanisms
                             using Sequence Labeling and a Question Answering framework.
                         </p>
                     </td>
@@ -766,12 +766,12 @@
                         <br>
                         <p>
                             In this work, we study and compare multiple capsule routing algorithms for text
-                            classification including dynamic routing, Heinsen routing, and capsule-routing inspired
+                            classification including dynamic routing, Heinsen routing, and capsule-routing-inspired
                             attention-based sentence encoding techniques like dynamic self-attention. Further, similar
                             to some works in computer vision, we do an ablation test of the capsule network where we
                             remove the routing algorithm itself. We analyze the theoretical connection between attention
-                            and capsule routing, and contrast the two ways of normalizing the routing weights. Finally,
-                            we present a new way to do capsule routing, or rather iterative refinement, using a richer
+                            and capsule routing and contrast the two ways of normalizing the routing weights. Finally,
+                            we present a new way to do capsule routing, or rather an iterative refinement, using a richer
                             attention function to measure agreement among output and input capsules and with highway
                             connections in between iterations.
                         </p>
@@ -796,7 +796,7 @@
                         <p>
                             Despite the strong predictive performance of Machine Learning models, they are still subject
                             to spurious correlations. Working under the I.I.D. assumption they are often hard to
-                            generalize to an out of distribution test data. In this project, we tackle the problem of
+                            generalize to an out-of-distribution test data. In this project, we tackle the problem of
                             co-variate shift, where the test data is from a different distribution than the training
                             data. Particularly, we approach this problem from a causal framework. We compare IRMv1,
                             CoRe, ICP, and Entropy Penalty (EP) on different settings. Furthermore, we experiment with
@@ -843,14 +843,14 @@
                         <a href="https://github.com/JRC1995/Faux-Reddit">code</a>
                         <br>
                         <p>
-                            The project is inspired from Reddit and the initial data is populated from a sample of real
+                            The project is inspired by Reddit and the initial data is populated from a sample of real
                             Reddit data that was retrieved using Google Big-Query. The database is implemented using
                             both SQL and NoSQL technologies in a complementary fashion. Users of E-Dialectics can read
                             discussion threads and the comments for them, which are created by other users; each thread
                             can also be under different subforums (eg. philosophy, computer science, science etc.).
-                            Anyone can read the threads and comments, but to be able to interact further they must login
+                            Anyone can read the threads and comments, but to be able to interact further they must log in
                             to the site; new users can create their own accounts. Users can then create new threads and
-                            comments after they log into their account.
+                            comments after they log into their accounts.
                         </p>
                     </td>
                 </tr>
@@ -949,8 +949,8 @@
                         </a>
                         <br>
                         <p>
-                            Coped from Website: "Allowing companies to manage recipes, analyze the effect of ingredient
-                            price changes on food cost, develop menus and produce and analyze national or regional food
+                            Copied from Website: "Allowing companies to manage recipes, analyze the effect of ingredient
+                            price changes in food cost, develop menus, and produce and analyze national or regional food
                             costs based on sales information.
 
                             </br>(Menu Management): Allowing chefs and R&D teams to manage current menu items and items
