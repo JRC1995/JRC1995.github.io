@@ -42,16 +42,16 @@
                                 href="https://www.cs.uic.edu/~cornelia/">Cornelia Caragea</a>.
                             During the summer of 2020 and 2021, I did research internships at <strong>Bloomberg</strong>.
                             <br><br>
-                            I am broadly interested in Out-of-Distribution (OOD) generalization (eg. length
-                            generalization, systematic generalization), robustness, alignment, and Generative AI.
+                            I am broadly interested in Out-of-Distribution (OOD) generalization (e.g., length
+                            generalization amd systematic generalization), robustness, alignment, and generative AI.
                             I explored ways to extend Recursive Neural Networks (RvNN) for length generalization and
                             compositional generalization
-                            without any access to ground truth structure data. I developed Continuous Recursive Neural
+                            without access to ground truth structure data. I developed Continuous Recursive Neural
                             Networks (CRvNN)
                             which softens the structure and order of composition - making it closer to Transformers. I
                             also extended
                             Gumbel Tree RvNNs with Beam Search and introduced several tricks to reduce memory
-                            consumption by more than 10 times. I also explored ways to interface RvNNs
+                            consumption by more than ten times. I also explored ways to interface RvNNs
                             with Transformers. I have also worked on novel forms of location attention for length
                             generalization using Seq2Seq models.
                             I have done work on prompt tuning, prompt engineering, contrastive learning, imitation
@@ -73,7 +73,7 @@
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
                         </ul>
-                        (Last updated: 12/10/2023)
+                        (Last updated: 12/31/2023)
                         </p>
                     </td>
                     <td style="padding:2.5%;width:40%;max-width:40%">
@@ -129,15 +129,7 @@
                         <a href="https://github.com/JRC1995/Continuous-RvNN">code</a> /
                         <a href="https://slideslive.com/38958572/modeling-hierarchical-structures-with-continuous-recursive-neural-networks?ref=recommended">Talk</a>
                         <p>
-                            Recursive Neural Networks (RvNNs), which compose sequences according to their underlying
-                            hierarchical syntactic structure, have performed well in several natural language processing
-                            tasks compared to similar models without structural biases.
-                            However, traditional RvNNs are incapable of inducing the latent structure in a plain text
-                            sequence on their own. Several extensions have been proposed to overcome this limitation.
-                            Nevertheless, these extensions tend to rely on surrogate gradients or reinforcement learning
-                            at the cost of higher bias or variance. In this work, we propose Continuous Recursive Neural
-                            Network (CRvNN) as a backpropagation-friendly alternative to address the aforementioned
-                            limitations.
+                            We propose Continuous Recursive Neural Network (CRvNN) as a backpropagation-friendly implementation of RvNNs without surrogate gradients, reinforcement learning, or stack-augmented recurrent operations.
                             This is done by incorporating a continuous relaxation to the induced structure.
                         </p>
                     </td>
@@ -191,14 +183,11 @@
                         <a href="https://github.com/JRC1995/BeamRecursionFamily/">code</a>
                         <p>
                             Beam Tree Recursive Neural Network (BT-RvNN) was recently proposed as a simple extension of
-                            Gumbel Tree RvNN and it was shown to achieve state-of-the art
-                            length generalization performance in ListOps while maintaining comparable performance on
-                            other tasks. However, BT-RvNN
-                            can be quite expensive in memory usage. We identify the main bottleneck and remove it
-                            leading to a 10-16 times less memory consumption.
+                            Gumbel Tree RvNN. We identify a memory bottleneck in it and remove it
+                            leading to 10-16 times less memory consumption.
                             In addition, we also propose a strategy to utilize the induced latent-tree node
                             representations produced by BT-RvNN to turn BT-RvNN from a sentence encoder
-                            into a sequence contextualizer by sending top-down signals from parent node to leaf nodes
+                            into a sequence contextualizer by sending top-down signals from the parent node to leaf nodes
                             using attention. This opens up a way to interface BT-RvNN with other
                             downstream modules like Transformers.
                         </p>
@@ -226,13 +215,11 @@
                         <p>
                             We implement a Balanced Tree Recursion at a chunk level. Each chunk at any iteration is
                             processed by Efficient Beam Tree Recursive Neural Networks (EBT-RvNN).
-                            Thus, Recursion within a Recursion is implemented. The inner recursion is expensive but
-                            bounded by a constant chunk size, whereas the time complexity of the outer recursion
-                            is logarithmic with respect to the sequence length. Thus, this hybrid setup is much more
+                            Thus, Recursion within a Recursion is implemented. This hybrid setup is much more
                             computationally efficient than EBT-RvNN. On the other hand, it still performs
                             competitively in ListOps length generalization and logical inference unlike fully Balanced
-                            Tree models or other stronger models. The model setup also performs well in the
-                            text-related data of LRA.
+                            Tree models or other models like Transformers or SSMs. The model setup also performs well in the
+                            text-related tasks of LRA.
                         </p>
                     </td>
                 </tr>
@@ -273,15 +260,6 @@
                         <p>
                             We explore different ways to utilize position-based cross-attention in seq2seq networks to
                             enable length generalization in algorithmic tasks.
-                            We show that a simple approach of interpolating the original and reversed encoded
-                            representations combined with relative attention allow near-perfect length generalization
-                            for both forward and reverse lookup tasks or copy tasks that had been generally hard to
-                            tackle.
-                            We also devise harder diagnostic tasks where the relative distance of the ideal attention
-                            position varies with timestep.
-                            In such settings, the simple interpolation trick with relative attention is not sufficient.
-                            We introduce novel variants of location attention building on top of Location Attention
-                            (Dubois et al. 2020) to address the new diagnostic tasks.
                         </p>
                     </td>
                 </tr>
@@ -320,15 +298,12 @@
                         <br>
                         <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21297/21046">pdf</a>
                         <p>
-                            We concentrate on two contributions to the task:
+                            We concentrate on two contributions to paraphrase generation:
                             (1) we propose Retrieval Augmented Prompt Tuning (RAPT) as a parameter-efficient method to
                             adapt large pre-trained language models for paraphrase generation;
                             (2) we propose Novelty Conditioned RAPT (NC-RAPT) as a simple model-agnostic method of using
                             specialized prompt tokens for controlled paraphrase generation
-                            with varying levels of lexical novelty. By conducting extensive experiments on four
-                            datasets,
-                            we demonstrate the effectiveness of the proposed approaches for retaining the semantic
-                            content of the original text while inducing lexical novelty in the generation.
+                            with varying levels of lexical novelty. 
                         </p>
                     </td>
                 </tr>
@@ -371,12 +346,9 @@
                         <a href="https://github.com/JRC1995/KPDrop">code</a>
                         <p>
                             We propose a model-agnostic approach called keyphrase dropout (or KPDrop) to improve absent
-                            keyphrase generation.
-                            In this approach, we randomly drop present keyphrases from the document and turn them into
-                            artificial absent keyphrases during training.
-                            We test our approach extensively and show that it consistently improves the absent
-                            performance of strong baselines in both supervised and resource-constrained semi-supervised
-                            settings.
+                            keyphrase generation. 
+                            In this approach, we all instances of some randomly chosen present keyphrases from the document and turn them into
+                            artificial absent keyphrases during training. We also explore the benefits of this method in a semi-supervised training regime.
                         </p>
                     </td>
                 </tr>
@@ -593,22 +565,10 @@
                         <br>
                         <a href="https://dl.acm.org/doi/pdf/10.1145/3308558.3313696?casa_token=UsSr1XchMZgAAAAA:bP2CxkZfMKrowF_qa7e2Af7ZaNAk9uoRU84xlr1zIWrcBqIwTrYhQxvzCLq4YQNRm5XRWpg7CmIfxQ">pdf</a>
                         <p>
-                            While keyphrase extraction has received considerable attention in recent years, relatively
-                            few studies exist on extracting keyphrases from social media platforms such as Twitter, and
-                            even fewer for extracting disaster-related keyphrases from such sources. During a disaster,
-                            keyphrases can be extremely useful for filtering relevant tweets that can enhance
-                            situational awareness. Previously, joint training of two different layers of a stacked
-                            Recurrent Neural Network for keyword discovery and keyphrase extraction had been shown to be
-                            effective in extracting keyphrases from general Twitter data. We improve the model's
-                            performance on both general Twitter data and disaster-related Twitter data by incorporating
-                            contextual word embeddings, POS-tags, phonetics, and phonological features. Moreover, we
-                            discuss the shortcomings of the often used F1-measure for evaluating the quality of
-                            predicted keyphrases with respect to the ground truth annotations. Instead of the
-                            F1-measure, we propose the use of embedding-based metrics to better capture the correctness
-                            of the predicted keyphrases. In addition, we also present a novel extension of an
-                            embedding-based metric.
-                            The extension allows one to better control the penalty for the difference in the number of
-                            ground-truth and predicted keyphrases.
+                            We explore keyphrase extraction models for extracting disaster-related keyphrases from tweets.
+                            We employ a joint-training-based approach (for keyword discovery and keyphrase extraction). 
+                            We extend it using contextual word embeddings, POS-tags, phonetics, and phonological features. We also propose an embedding-based metrics to better capture the correctness
+                            of the predicted keyphrases.
                         </p>
                     </td>
                 </tr>
@@ -692,17 +652,10 @@
                         <a href="https://www.youtube.com/embed/Zbz-vEp5coo">video</a>
                         <br>
                         <p>
-                            This is a pre-ChatGPT era model. Uses Dialog-GPT combined with response retrieval mechanism
-                            from a custom script (can be used for customing personality) and reddit database.
-                            Conversational bots are bots which can engage in conversations with a partner in natural
-                            language. They can be used as virtual tutors, digital assistants, customer service, virtual
-                            therapists, task-oriented services, and entertainment. Conversational bots often come in
-                            broadly three forms of models - (i) rule-based model (ii) retrieval (IR) model, and (iii)
-                            generative model. Each of these variants have their own advantages and disadvantages. In
-                            this project we attempt to combine different aspects of all these approaches with a
-                            predominant focus on retrieval and generation. Our overall model is a synergy of multiple
-                            sub-modules for retrieval, classification, generation, and ranking. We also incorporate a
-                            Text2Speech Synthesis Mechanism.
+                            This is a pre-ChatGPT era model. It uses Dialog-GPT combined with a response retrieval mechanism
+                            from a custom script (can be used for customing personality) and Reddit database. The overall model is a synergy of multiple
+                            sub-modules for retrieval, dialog classification, generation, and ranking. It also incorporates a
+                            Text-to-Speech synthesis Mechanism.
                         </p>
                     </td>
                 </tr>
@@ -743,8 +696,7 @@
                             We address the challenges posed by noise and emerging/rare entities in Named Entity
                             Recognition task for social media domain. Following the recent advances, we employ
                             Contextualized Word Embeddings from Language Models pre-trained on large corpora along with
-                            some normalization techniques to reduce noise. Our best model achieves state-of-the-art
-                            results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adopt a modular approach to
+                            some normalization techniques to reduce noise. Our best model achieves state-of-the-art (at the time of the project) results (F1 52.47%) on WNUT 2017 dataset. Additionally, we adopt a modular approach to
                             systematically evaluate different contextual embeddings and downstream labeling mechanisms
                             using Sequence Labeling and a Question Answering framework.
                         </p>
@@ -765,13 +717,11 @@
                         <a href="https://github.com/JRC1995/CapsuleRoutingEncoders">code</a>
                         <br>
                         <p>
-                            In this work, we study and compare multiple capsule routing algorithms for text
-                            classification including dynamic routing, Heinsen routing, and capsule-routing-inspired
-                            attention-based sentence encoding techniques like dynamic self-attention. Further, similar
-                            to some works in computer vision, we do an ablation test of the capsule network where we
-                            remove the routing algorithm itself. We analyze the theoretical connection between attention
+                            In this work, I study and compare multiple capsule routing algorithms for text
+                            classification, including dynamic routing, Heinsen routing, and capsule-routing-inspired
+                            attention-based sentence encoding techniques like dynamic self-attention. We analyze the theoretical connection between attention
                             and capsule routing and contrast the two ways of normalizing the routing weights. Finally,
-                            we present a new way to do capsule routing, or rather an iterative refinement, using a richer
+                            I present a new way to do capsule routing, or rather an iterative refinement, using a richer
                             attention function to measure agreement among output and input capsules and with highway
                             connections in between iterations.
                         </p>
@@ -795,18 +745,14 @@
                         <br>
                         <p>
                             Despite the strong predictive performance of Machine Learning models, they are still subject
-                            to spurious correlations. Working under the I.I.D. assumption they are often hard to
-                            generalize to an out-of-distribution test data. In this project, we tackle the problem of
+                            to spurious correlations. Working under the I.I.D. assumption, they are often hard to
+                            generalize to out-of-distribution test data. In this project, we tackle the problem of
                             co-variate shift, where the test data is from a different distribution than the training
                             data. Particularly, we approach this problem from a causal framework. We compare IRMv1,
                             CoRe, ICP, and Entropy Penalty (EP) on different settings. Furthermore, we experiment with
                             disentangled representations, and we try to enhance classification results by gating the
                             features of intermediate hidden state representations based on their influence on the
-                            classification probabilities. The magnitude of influence of a feature is computed based on
-                            the difference between the classification probabilities obtained from using the features as
-                            they are and that obtained from intervening on certain features by counterfactually altering
-                            them. Although most of our results are negative, we provide potential reasons for such
-                            results and motivate future directions in this area.
+                            classification probabilities. 
                         </p>
                     </td>
                 </tr>
@@ -844,7 +790,7 @@
                         <br>
                         <p>
                             The project is inspired by Reddit and the initial data is populated from a sample of real
-                            Reddit data that was retrieved using Google Big-Query. The database is implemented using
+                            Reddit data that was retrieved using Google Big Query. The database is implemented using
                             both SQL and NoSQL technologies in a complementary fashion. Users of E-Dialectics can read
                             discussion threads and the comments for them, which are created by other users; each thread
                             can also be under different subforums (eg. philosophy, computer science, science etc.).
@@ -887,7 +833,7 @@
                                 href="https://github.com/JRC1995/Abstractive-Summarization">code</a>).
                             Machine Translation using Transformers (<a
                                 href="https://github.com/JRC1995/Machine-Translation-Transformers">code</a>).
-                            Abstractive Summarization with intra-attention based LSTM encoder (<a
+                            Abstractive Summarization with intra-attention-based LSTM encoder (<a
                                 href="https://github.com/JRC1995/INTER-INTRA-attentions">code</a>).
                         </p>
                     </td>
