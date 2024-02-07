@@ -71,7 +71,7 @@
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
                         </ul>
-                        (Last updated: 12/31/2023)
+                        (Last updated: 2/7/2024)
                         </p>
                     </td>
                     <td style="padding:2.5%;width:40%;max-width:40%">
@@ -97,7 +97,7 @@
                 <tbody>
                 <tr>
                     <td style="padding:20px;width:100%;vertical-align:middle">
-                        <strong>Recursive Neural Networks</strong>
+                        <strong>Recurrent/Recursive Neural Networks</strong>
                     </td>
                 </tr>
                 </tbody>
@@ -109,26 +109,81 @@
                 <tr>
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
-                            <img src="images/CRvNN.png" width="160" , style="padding-top: 7mm;">
+                            <img src="images/UT.png" width="160" , style="padding-top: 7mm;">
                         </div>
                     </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="http://proceedings.mlr.press/v139/chowdhury21a.html">
-                            <papertitle>Modeling Hierarchical Structures with Continuous Recursive Neural Networks
-                            </papertitle>
+                        <a href="https://arxiv.org/abs/2402.00976">
+                            <papertitle>Recurrent Transformers with Dynamic Halt</papertitle>
                         </a>
                         <br>
                         <strong>Jishnu Ray Chowdhury</strong>,
                         Cornelia Caragea
                         <br>
-                        ICML <strong>(Long Talk)</strong>, 2021
+                        ArXiv, 2024
                         <br>
-                        <a href="http://proceedings.mlr.press/v139/chowdhury21a/chowdhury21a.pdf">pdf</a> /
-                        <a href="https://github.com/JRC1995/Continuous-RvNN">code</a> /
-                        <a href="https://slideslive.com/38958572/modeling-hierarchical-structures-with-continuous-recursive-neural-networks?ref=recommended">Talk</a>
+                        <a href="https://arxiv.org/abs/2402.00976">pdf</a>
                         <p>
-                            We propose Continuous Recursive Neural Network (CRvNN) as a backpropagation-friendly implementation of RvNNs without surrogate gradients, reinforcement learning, or stack-augmented recurrent operations.
-                            This is done by incorporating a continuous relaxation to the induced structure.
+                            We empirically study the inductive biases of two major approaches to augmenting Transformers with a recurrent mechanism - (1) the approach of incorporating a depth-wise recurrence similar to Universal Transformers; and (2) the approach of incorporating a chunk-wise temporal recurrence like Temporal Latent Bottleneck.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/rir.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2311.04449">
+                        <papertitle>Recursion in Recursion</papertitle>
+                        </a>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        NeurIPS, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2311.04449.pdf">pdf</a>/
+                        <a href="https://github.com/JRC1995/BeamRecursionFamily/">code</a>
+                        <p>
+                            We implement a Balanced Tree Recursion at a chunk level. Each chunk at any iteration is
+                            processed by Efficient Beam Tree Recursive Neural Networks (EBT-RvNN).
+                            Thus, Recursion within a Recursion is implemented. This hybrid setup is much more
+                            computationally efficient than EBT-RvNN. On the other hand, it still performs
+                            competitively in ListOps length generalization and logical inference, unlike fully Balanced
+                            Tree models or other models like Transformers/SSMs. The model setup also performs well in the
+                            text-related tasks of LRA.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src="images/EBT-RvNN.png" width="160" , style="padding-top: 7mm;">
+                        </div>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2307.10779">
+                            <papertitle>Efficient Beam Tree Recursion</papertitle>
+                        </a>
+                        <br>
+                        <strong>Jishnu Ray Chowdhury</strong>,
+                        Cornelia Caragea
+                        <br>
+                        NeurIPS, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2307.10779.pdf">pdf</a>/
+                        <a href="https://github.com/JRC1995/BeamRecursionFamily/">code</a>
+                        <p>
+                            Beam Tree Recursive Neural Network (BT-RvNN) was recently proposed as a simple extension of
+                            Gumbel Tree RvNN. We identify a memory bottleneck in it and remove it
+                            leading to 10-16 times less memory consumption.
+                            In addition, we also propose a strategy to utilize the induced latent-tree node
+                            representations produced by BT-RvNN to turn BT-RvNN from a sentence encoder
+                            into a sequence contextualizer by sending top-down signals from the parent node to leaf nodes
+                            using attention. This opens up a way to interface BT-RvNN with other
+                            downstream modules like Transformers.
                         </p>
                     </td>
                 </tr>
@@ -160,64 +215,29 @@
                         </p>
                     </td>
                 </tr>
-
                 <tr>
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
-                            <img src="images/EBT-RvNN.png" width="160" , style="padding-top: 7mm;">
+                            <img src="images/CRvNN.png" width="160" , style="padding-top: 7mm;">
                         </div>
                     </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="https://arxiv.org/abs/2307.10779">
-                            <papertitle>Efficient Beam Tree Recursion</papertitle>
+                        <a href="http://proceedings.mlr.press/v139/chowdhury21a.html">
+                            <papertitle>Modeling Hierarchical Structures with Continuous Recursive Neural Networks
+                            </papertitle>
                         </a>
                         <br>
                         <strong>Jishnu Ray Chowdhury</strong>,
                         Cornelia Caragea
                         <br>
-                        NeurIPS, 2023
+                        ICML <strong>(Long Talk)</strong>, 2021
                         <br>
-                        <a href="https://arxiv.org/pdf/2307.10779.pdf">pdf</a>/
-                        <a href="https://github.com/JRC1995/BeamRecursionFamily/">code</a>
+                        <a href="http://proceedings.mlr.press/v139/chowdhury21a/chowdhury21a.pdf">pdf</a> /
+                        <a href="https://github.com/JRC1995/Continuous-RvNN">code</a> /
+                        <a href="https://slideslive.com/38958572/modeling-hierarchical-structures-with-continuous-recursive-neural-networks?ref=recommended">Talk</a>
                         <p>
-                            Beam Tree Recursive Neural Network (BT-RvNN) was recently proposed as a simple extension of
-                            Gumbel Tree RvNN. We identify a memory bottleneck in it and remove it
-                            leading to 10-16 times less memory consumption.
-                            In addition, we also propose a strategy to utilize the induced latent-tree node
-                            representations produced by BT-RvNN to turn BT-RvNN from a sentence encoder
-                            into a sequence contextualizer by sending top-down signals from the parent node to leaf nodes
-                            using attention. This opens up a way to interface BT-RvNN with other
-                            downstream modules like Transformers.
-                        </p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src="images/rir.png" width="160" , style="padding-top: 7mm;">
-                        </div>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="https://arxiv.org/abs/2311.04449">
-                        <papertitle>Recursion in Recursion</papertitle>
-                        </a>
-                        <br>
-                        <strong>Jishnu Ray Chowdhury</strong>,
-                        Cornelia Caragea
-                        <br>
-                        NeurIPS, 2023
-                        <br>
-                        <a href="https://arxiv.org/pdf/2311.04449.pdf">pdf</a>/
-                        <a href="https://github.com/JRC1995/BeamRecursionFamily/">code</a>
-                        <p>
-                            We implement a Balanced Tree Recursion at a chunk level. Each chunk at any iteration is
-                            processed by Efficient Beam Tree Recursive Neural Networks (EBT-RvNN).
-                            Thus, Recursion within a Recursion is implemented. This hybrid setup is much more
-                            computationally efficient than EBT-RvNN. On the other hand, it still performs
-                            competitively in ListOps length generalization and logical inference unlike fully Balanced
-                            Tree models or other models like Transformers or SSMs. The model setup also performs well in the
-                            text-related tasks of LRA.
+                            We propose Continuous Recursive Neural Network (CRvNN) as a backpropagation-friendly implementation of RvNNs without surrogate gradients, reinforcement learning, or stack-augmented recurrent operations.
+                            This is done by incorporating a continuous relaxation to the induced structure.
                         </p>
                     </td>
                 </tr>
@@ -286,7 +306,6 @@
                                 Prompt Tuning
                             </papertitle>
                         </a>
-
                         <br>
                         <strong>Jishnu Ray Chowdhury</strong>,
                         Yong Zhuang,
@@ -320,7 +339,6 @@
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
-
                 <tr>
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
@@ -653,7 +671,7 @@
                             This is a pre-ChatGPT era model. It uses Dialog-GPT combined with a response retrieval mechanism
                             from a custom script (can be used for customing personality) and Reddit database. The overall model is a synergy of multiple
                             sub-modules for retrieval, dialog classification, generation, and ranking. It also incorporates a
-                            Text-to-Speech synthesis Mechanism.
+                            Text-to-Speech Synthesis Mechanism.
                         </p>
                     </td>
                 </tr>
@@ -892,20 +910,9 @@
                             <papertitle>Menu Management Module (2017)</papertitle>
                         </a>
                         <br>
-                        <p>
-                            Copied from Website: "Allowing companies to manage recipes, analyze the effect of ingredient
-                            price changes in food cost, develop menus, and produce and analyze national or regional food
-                            costs based on sales information.
-
-                            </br>(Menu Management): Allowing chefs and R&D teams to manage current menu items and items
-                            in development and assist in the conversion to training materials.
-
-                            </br>(Food Cost Analysis): Analyze the effect of changing ingredient costs and their affect
-                            on food cost. The menu development team can conduct what-if analysis to different scenarios,
-                            from improving quality to reducing cost.
-
-                            </br>(Rate of Sales Reports): Understanding regional and national food cost based on real
-                            sales, recipes and actual input costs."
+                        <p> 
+                            A full-stack software connected to a database that allows restaurants to manage menus, recipes, ingredients, and food costs among other information. 
+                            This was a freelance project. I engaged in full-stack development including design of database, queries, frontend UI design, and some backend programming.
                         </p>
                     </td>
                 </tr>
@@ -921,6 +928,8 @@
                         </br>
                         </br>
                         <ul>
+                            <li>ICML 2024 Reviewer</li>
+                            <li>NAACL 2024 Reviewer</li>
                             <li>ICLR 2024 Reviewer</li>
                             <li>AAAI 2024 Reviewer</li>
                             <li>EMNLP 2023 Reviewer</li>
